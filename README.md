@@ -79,18 +79,6 @@ python cpps_simulator.py --sim-mode ns3 --duration 20 --seed 123 \
     --failed-lines "5,15,25" --destroyed-comm "4,5,8,9,12"
 ```
 
-### Key Parameters
-
-| Parameter | Default | Description |
-|-----------|---------|-------------|
-| `--sim-mode` | `python` | `python` for fast approximation, `ns3` for full OLSR simulation |
-| `--duration` | 15 | Simulation horizon (steps) |
-| `--battery-cap` | 5 | RTU backup battery capacity (steps) |
-| `--over-trip` | 0.10 | Protection over-trip probability |
-| `--failed-lines` | — | Comma-separated line indices to destroy |
-| `--destroyed-comm` | — | Comma-separated comm node indices to destroy |
-| `--seed` | 42 | Random seed for reproducibility |
-
 Run `python cpps_simulator.py --help` for all options.
 
 ## Output
@@ -100,12 +88,6 @@ After a successful run, results are saved in `output/`:
 - `timeseries.png` — 5-panel time-series visualization
 - `topology_fused.png` — fused cyber-physical topology
 - `snapshots/` — per-timestep topology snapshots
-
-## Citation
-
-If you use PHASE in your research, please cite our paper:
-
-> Y. Sun, Z. Shi, T. Zhang, X. Huang, and K. Li, "PHASE: A Phased Co-Simulation Framework for Cyber-Physical Cascading Failure Analysis," in *Proc. IEEE Conf.*, 2026.
 
 ## License
 
